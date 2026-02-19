@@ -8,28 +8,28 @@ const MEMORIES = [
     src: "/images/WhatsApp Image 2026-02-19 at 00.56.11.jpeg",
     note: "The one where it all started... I really really like this picture 😂",
     rotation: -3,
-    episode: "S1 · E1",
+    log: "Testimony",
   },
   {
     id: 3,
     src: "/images/WhatsApp Image 2026-02-19 at 00.56.12 (1).jpeg",
     note: "I was looking at this picture and thinking about how gorgeous you are, inside and out.",
     rotation: -1.5,
-    episode: "S1 · E3",
+    log: "Victoria",
   },
   {
     id: 4,
     src: "/images/WhatsApp Image 2026-02-19 at 00.56.12 (2).jpeg",
     note: "But even a picture can't capture how genuinely kind, smart, and amazing you are.",
     rotation: 3.5,
-    episode: "S1 · E4",
+    log: "Covenant",
   },
   {
     id: 5,
     src: "/images/WhatsApp Image 2026-02-19 at 00.56.12 (3).jpeg",
     note: "You have this beautiful way of making my day so much brighter, even from miles away. I love you so much ❤️",
     rotation: -2,
-    episode: "S1 · E5",
+    log: "Daisy",
   },
 ];
 
@@ -120,7 +120,7 @@ export function EpisodeRow() {
                 note={mem.note}
                 rotation={mem.rotation}
                 delay={index}
-                episode={mem.episode}
+                episode={mem.log}
                 onLightbox={() => openLightbox(index)}
               />
             </div>
