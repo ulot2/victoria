@@ -121,7 +121,7 @@ export function CustomCursor() {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed top-0 left-0 w-full h-full pointer-events-none z-[100]"
+      className="fixed top-0 left-0 w-full h-full pointer-events-none z-100"
       aria-hidden="true"
     />
   );

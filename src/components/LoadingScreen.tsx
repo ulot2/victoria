@@ -14,7 +14,7 @@ export function LoadingScreen({ isLoading }: LoadingScreenProps) {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, scale: 1.05 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
-          className="fixed inset-0 z-[200] flex flex-col items-center justify-center gap-8"
+          className="fixed inset-0 z-200 flex flex-col items-center justify-center gap-8"
           style={{ backgroundColor: "#020617" }}
         >
           {/* Subtle radial glow */}
@@ -38,7 +38,7 @@ export function LoadingScreen({ isLoading }: LoadingScreenProps) {
           <div className="text-center z-10">
             <h1 className="text-4xl sm:text-5xl font-bold text-white tracking-tight">
               Dear{" "}
-              <span className="bg-gradient-to-r from-rose-500 to-orange-400 bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-rose-500 to-orange-400 bg-clip-text text-transparent">
                 Daisy,
               </span>
             </h1>

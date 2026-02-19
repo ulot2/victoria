@@ -75,7 +75,7 @@ export function DateModal({ isOpen, onClose }: DateModalProps) {
           >
             <div className="bg-slate-900/95 border border-white/10 rounded-2xl shadow-2xl overflow-hidden backdrop-blur-sm max-h-[90vh] overflow-y-auto">
               {/* Header */}
-              <div className="relative h-36 bg-gradient-to-br from-rose-600 via-rose-500 to-orange-500 p-6 flex items-center justify-center overflow-hidden">
+              <div className="relative h-36 bg-linear-to-br from-rose-600 via-rose-500 to-orange-500 p-6 flex items-center justify-center overflow-hidden">
                 {/* Decorative circles */}
                 <div className="absolute top-4 -left-6 w-24 h-24 bg-white/10 rounded-full" />
                 <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-white/10 rounded-full" />

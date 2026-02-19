@@ -57,7 +57,7 @@ export function Lightbox({
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="fixed inset-0 bg-black/90 backdrop-blur-xl z-[60]"
+            className="fixed inset-0 bg-black/90 backdrop-blur-xl z-60"
           />
 
           {/* Content */}
@@ -66,7 +66,7 @@ export function Lightbox({
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.9 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
-            className="fixed inset-0 z-[61] flex items-center justify-center p-4 md:p-12 pointer-events-none"
+            className="fixed inset-0 z-61 flex items-center justify-center p-4 md:p-12 pointer-events-none"
           >
             {/* Close button */}
             <button

@@ -94,7 +94,7 @@ export function Polaroid({
                 loading="lazy"
                 draggable={false}
               />
-              <div className="absolute inset-0 bg-gradient-to-tr from-amber-500/10 to-blue-500/5 mix-blend-overlay pointer-events-none" />
+              <div className="absolute inset-0 bg-linear-to-tr from-amber-500/10 to-blue-500/5 mix-blend-overlay pointer-events-none" />
             </div>
 
             {/* Episode tag */}

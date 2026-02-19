@@ -18,13 +18,13 @@ export function Hero({ onStartDate }: HeroProps) {
   return (
     <div className="relative min-h-[70vh] w-full flex flex-col items-center justify-center text-center px-4 overflow-hidden py-16 md:py-0">
       {/* ── Ambient Background Gradient ── */}
-      <div className="absolute inset-0 z-[1] pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-b from-rose-950/30 via-transparent to-transparent" />
+      <div className="absolute inset-0 z-1 pointer-events-none">
+        <div className="absolute inset-0 bg-linear-to-b from-rose-950/30 via-transparent to-transparent" />
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-rose-600/10 rounded-full blur-[120px]" />
       </div>
 
       {/* ── Floating Heart Particles ── */}
-      <div className="absolute inset-0 z-[1] pointer-events-none overflow-hidden">
+      <div className="absolute inset-0 z-1 pointer-events-none overflow-hidden">
         {PARTICLES.map((p, i) => (
           <span
             key={i}
@@ -60,7 +60,7 @@ export function Hero({ onStartDate }: HeroProps) {
             style={{ color: "var(--text-primary)" }}
           >
             Dear{" "}
-            <span className="bg-gradient-to-r from-rose-500 to-orange-400 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-rose-500 to-orange-400 bg-clip-text text-transparent">
               Daisy,
             </span>
           </h1>
@@ -85,7 +85,7 @@ export function Hero({ onStartDate }: HeroProps) {
           whileHover={{ scale: 1.06 }}
           whileTap={{ scale: 0.95 }}
           onClick={onStartDate}
-          className="group relative inline-flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-rose-600 to-rose-500 hover:from-rose-500 hover:to-rose-400 text-white rounded-full font-semibold text-lg transition-all cursor-pointer animate-pulse-glow"
+          className="group relative inline-flex items-center gap-3 px-10 py-4 bg-linear-to-r from-rose-600 to-rose-500 hover:from-rose-500 hover:to-rose-400 text-white rounded-full font-semibold text-lg transition-all cursor-pointer animate-pulse-glow"
         >
           <Play className="w-5 h-5 fill-current" />
           <span>Start Date</span>

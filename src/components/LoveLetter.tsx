@@ -71,7 +71,7 @@ export function LoveLetter() {
         <div className="absolute -bottom-3 -left-3 w-8 h-8 border-b-2 border-l-2 border-rose-500/30 rounded-bl-sm" />
         <div className="absolute -bottom-3 -right-3 w-8 h-8 border-b-2 border-r-2 border-rose-500/30 rounded-br-sm" />
 
-        <div className="bg-white/[0.03] border border-white/10 rounded-xl p-8 md:p-12 backdrop-blur-sm">
+        <div className="bg-white/3 border border-white/10 rounded-xl p-8 md:p-12 backdrop-blur-sm">
           <div className="font-handwriting text-2xl sm:text-3xl md:text-4xl text-rose-100/90 leading-relaxed tracking-wide space-y-1">
             {LINES.map((line, i) => (
               <LetterLine key={i} text={line} index={i} />
