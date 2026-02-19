@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Infant:wght@300;400;500;600;700&family=Great+Vibes&display=swap");
+
+:root {
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #020617;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #020617;
+  overflow-x: hidden;
+}
+
+/* ── Tailwind v4 Theme Tokens ── */
+@theme {
+  --font-handwriting: "Great Vibes", cursive;
+  --font-serif: "Cormorant Infant", serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --color-rose-600: #e11d48;
+  --color-rose-400: #fb7185;
+}
+
+/* ── 3D Card Utilities ── */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* ── Heart Float Animation ── */
+@keyframes float-up {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.5);
+  }
+  20% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-120px) scale(1.2) rotate(15deg);
+  }
+}
+.animate-float-up {
+  animation: float-up 4s ease-out infinite;
+}
+
+/* ── Gentle Pulse Glow ── */
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 15px rgba(225, 29, 72, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(225, 29, 72, 0.6);
+  }
+}
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+/* ── Scrollbar Hide ── */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ── Selection ── */
+::selection {
+  background: rgba(225, 29, 72, 0.3);
+}
+
+/* ── Theme CSS Variables (defaults = dark) ── */
+:root {
+  --bg-primary: #020617;
+  --bg-secondary: rgba(255, 255, 255, 0.03);
+  --bg-card: rgba(255, 255, 255, 0.05);
+  --text-primary: rgba(255, 255, 255, 0.87);
+  --text-secondary: #94a3b8;
+  --text-muted: #475569;
+  --accent: #e11d48;
+  --accent-soft: rgba(225, 29, 72, 0.2);
+  --border: rgba(255, 255, 255, 0.1);
+  --surface: #0f172a;
+}
+
+/* Smooth theme transitions */
+.theme-dark,
+.theme-rose {
+  transition:
+    background-color 500ms ease,
+    color 500ms ease;
+}
+
+/* Rose theme — Polaroid front card should be white */
+.theme-rose .backface-hidden {
+  transition: background-color 500ms ease;
+}
